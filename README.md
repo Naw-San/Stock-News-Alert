@@ -26,12 +26,12 @@
       Twilio for Twilio account SID and Auth Token
 
   # Usage
-//You could modify your favorite stock beside "TSLA". Please refer to this -> www.alphavantage.co
+  You could modify your favorite stock beside "TSLA". Please refer to this -> www.alphavantage.co
     STOCK = "TSLA"     
     COMPANY_NAME = "Tesla Inc"
 
-//And you need to generate your own Twilio Account SID and Auth Token from Twilio website https://www.twilio.com/
-//Replace your SID and Auth Token on line 13 and line 14 in the main.py file 
+  And you need to generate your own Twilio Account SID and Auth Token from Twilio website https://www.twilio.com/
+  Replace your SID and Auth Token on line 13 and line 14 in the main.py file 
 
 # Run the program
   After modified with your favorite STOCK, COMPANY_NAME, SID, and Auth Token, run your progrm on your system. Below is the command to run the program,
