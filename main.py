@@ -37,6 +37,9 @@ news_parameter = {
     "apiKey" : NEWS_API_KEY,
     "language" : "en",
 }
+#
+# You could set percentage difference here. I set only 1% different to test the code.
+#
 if diff_percentage > 1:
     news_response = requests.get(url=NEWS_ENDPOINT,params=news_parameter)
     articles = news_response.json()["articles"]
