@@ -38,7 +38,7 @@
     python3 main.py
 
 # Run the program in the Cloud
-  You can shedule and run the program everyday on www.pythonanywhere.com.
+  You can schedule and run the program everyday on www.pythonanywhere.com.
   It's free, you just need to sign up!
 
 
