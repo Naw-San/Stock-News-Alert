@@ -2,9 +2,8 @@ import requests
 from twilio.rest import Client
 from dotenv import load_dotenv
 import os
+import argparse
 
-STOCK = "TSLA"
-COMPANY_NAME = "Tesla Inc"
 
 #Create .env file in your project directory and load environment variables from .env
 load_dotenv()
@@ -13,6 +12,17 @@ STOCK_ENDPOINT = "https://www.alphavantage.co/query"
 NEWS_ENDPOINT = "https://newsapi.org/v2/everything"
 NEWS_API_KEY = os.getenv("NEWS_API_KEY")
 STOCK_API_KEY = os.getenv("STOCK_API_KEY")
+
+# Set up argparse
+parse = argparse.ArgumentParser(description="Track stock and related news.")
+parse.add_argument("stock", help="Stock symbol (e.g., TSLA)")
+parse.add_argument("company", help="Company name (e.g., Tesla Inc)")
+args = parser.parse_args()
+
+STOCK = args.stock
+COMPANY_NAME = args.company
+
+print(f"Tracking {Stock} ({COMPANY_NAME})")
 
 #twilio
 account_sid = "ADD YOUR ACCOUNT ID HERE"
@@ -59,6 +69,9 @@ if diff_percentage > 1:
         )
 
 
+#########################################################
+# To run this program from terminal 
+# python main.py TSLA "Tesla Inc"
 
 
 
