@@ -24,6 +24,9 @@
       Alpha Vantage
       NewsAPI
       Twilio for Twilio account SID and Auth Token
+  - Install python-dotenv in your terminal
+      pip install python-dotenv
+  - Then create .env(enviornment variables) file in your project directory
 
   # Usage
   You can follow your favorite stock news. Please refer to this -> www.alphavantage.co for stock symbol and company name.
@@ -33,7 +36,7 @@
   Replace your SID and Auth Token on line 13 and line 14 in the main.py file 
 
 # Run the program
-  After modified with your favorite STOCK, COMPANY_NAME, SID, and Auth Token, run your progrm on your system. Below is the command to run the program,
+  When you have your favorite STOCK, COMPANY_NAME, SID, and Auth Token, run your progrm on your system. Below is the command to run the program,
     
     python3 main.py TSLA "Tesla Inc"
 
