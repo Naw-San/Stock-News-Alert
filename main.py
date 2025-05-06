@@ -1,13 +1,18 @@
 import requests
 from twilio.rest import Client
+from dotenv import load_dotenv
+import os
 
 STOCK = "TSLA"
 COMPANY_NAME = "Tesla Inc"
 
+#Create .env file in your project directory and load environment variables from .env
+load_dotenv()
+
 STOCK_ENDPOINT = "https://www.alphavantage.co/query"
 NEWS_ENDPOINT = "https://newsapi.org/v2/everything"
-NEWS_API_KEY = "647563f29bc9426fbbe0bc060714560f"
-STOCK_API_KEY = "XRO8LKKWIXGEWBMI"
+NEWS_API_KEY = os.getenv("NEWS_API_KEY")
+STOCK_API_KEY = os.getenv("STOCK_API_KEY")
 
 #twilio
 account_sid = "ADD YOUR ACCOUNT ID HERE"
